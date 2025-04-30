@@ -5,6 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomBean {
     public void doSomething() {
-        System.out.println("printing from bean");
+        System.out.println("printing from bean" + this);
     }
 }

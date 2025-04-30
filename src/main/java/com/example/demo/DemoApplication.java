@@ -8,13 +8,24 @@ import org.springframework.context.ApplicationContext;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ac = SpringApplication.run(DemoApplication.class, args);
-		for(String beanName : ac.getBeanDefinitionNames()) {
-			System.out.println(beanName);
-		}
+		SpringApplication.run(DemoApplication.class, args);
 
-		CustomBean cb = ac.getBean(CustomBean.class);
-		cb.doSomething();
+
+		// wat het kaboutertje typt bij opspinnen app
+//		CustomBean customBean = new CustomBean();
+//		BeanService beanService = new BeanService(customBean);
+
+		// wat het kaboutertje doet na de uitbreidingen
+//		ExampleConfig exampleConfig = new ExampleConfig();
+//		String blablaBean = exampleConfig.blablaBean();
+//		String lalaBean = exampleConfig.lalaBean();
+//		CustomBean customBean = new CustomBean();
+//		BeanService beanService = new BeanService();
+//		beanService.setName(blablaBean); // vrije vertaling - eigenlijk reflection
+//		beanService.setCb(cb); // vrij vertaling - eigenlijk reflection
+//		BeanServiceService beanServiceService = new BeanServiceService(beanService);
+
+
 	}
 
 }
