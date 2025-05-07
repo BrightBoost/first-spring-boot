@@ -10,7 +10,7 @@ public class MyCustomRunner implements CommandLineRunner {
     @Autowired
     ApplicationContext ac;
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         System.out.println("hallo!");
         System.out.println("Ik heb ontvangen: ");
         for(String s : args) {
